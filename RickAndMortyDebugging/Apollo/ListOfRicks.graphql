@@ -1,0 +1,9 @@
+query RickCharacters($page: Int!) {
+  characters(page: $page, filter: { name: "rick" }) {
+    results {
+      id
+      image
+      name
+    }
+  }
+}
